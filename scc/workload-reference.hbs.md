@@ -71,6 +71,8 @@ The reference for the template details which supply chains include the template.
   [api-descriptors](ootb-template-reference.hbs.md#api-descriptors)
 - debug: [convention-template](ootb-template-reference.hbs.md#convention-template)
 - ports: [server-template](ootb-template-reference.hbs.md#server-template)
+- replicas: [server-template](ootb-template-reference.hbs.md#server-template),
+  [worker-template](ootb-template-reference.hbs.md#worker-template)
 - api-descriptors: [api-descriptors](ootb-template-reference.hbs.md#api-descriptors)
 - gitops_branch: [config-writer-template](ootb-template-reference.hbs.md#config-writer-template),
   [config-writer-and-pull-requester-template](ootb-template-reference.hbs.md#config-writer-and-pull-requester-template),

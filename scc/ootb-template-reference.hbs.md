@@ -817,7 +817,27 @@ A ConfigMap, in which the data field has a key `delivery.yml` whose value is the
 
 ### Parameters
 
-None
+<table>
+  <tr>
+    <th>Parameter name</th>
+    <th>Meaning</th>
+    <th>Example</th>
+  </tr>
+
+  <tr>
+    <td><code>replicas<code></td>
+    <td>
+      Number of replicas declared on the deployment.
+      See https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#replicas
+    </td>
+    <td>
+      <pre>
+      - name: replicas
+        value: 3
+      </pre>
+    </td>
+  </tr>
+</table>
 
 ### More Information
 
@@ -867,6 +887,20 @@ Deployment and a Kubernetes Service to expose the pods.
           - containerPort: 2025
             name: smtp
             port: 25
+      </pre>
+    </td>
+  </tr>
+
+  <tr>
+    <td><code>replicas<code></td>
+    <td>
+      Number of replicas declared on the deployment.
+      See https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#replicas
+    </td>
+    <td>
+      <pre>
+      - name: replicas
+        value: 3
       </pre>
     </td>
   </tr>
