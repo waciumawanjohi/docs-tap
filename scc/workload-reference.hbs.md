@@ -70,6 +70,8 @@ The reference for the template details which supply chains include the template.
   [service-bindings](ootb-template-reference.hbs.md#service-bindings),
   [api-descriptors](ootb-template-reference.hbs.md#api-descriptors)
 - debug: [convention-template](ootb-template-reference.hbs.md#convention-template)
+- livenessProbe: [convention-template](ootb-template-reference.hbs.md#convention-template)
+- readinessProbe: [convention-template](ootb-template-reference.hbs.md#convention-template)
 - ports: [server-template](ootb-template-reference.hbs.md#server-template)
 - replicas: [server-template](ootb-template-reference.hbs.md#server-template),
   [worker-template](ootb-template-reference.hbs.md#worker-template)

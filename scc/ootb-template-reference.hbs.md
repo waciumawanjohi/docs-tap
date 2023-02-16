@@ -748,6 +748,48 @@ to represent the shape of the pods to run the application in containers.
       </pre>
     </td>
   </tr>
+
+  <tr>
+    <td><code>livenessProbe<code></td>
+    <td>
+      Probe to detect if application is alive.
+      See https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
+    </td>
+    <td>
+      <pre>
+      - name: livenessProbe
+        value:
+          httpGet:
+            path: /healthz
+            port: 8080
+            httpHeaders:
+            - name: Custom-Header
+              value: Awesome
+          initialDelaySeconds: 3
+          periodSeconds: 3
+      </pre>
+    </td>
+  </tr>
+
+  <tr>
+    <td><code>readinessProbe<code></td>
+    <td>
+      Probe to detect if application is able to serve traffic.
+      See https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
+    </td>
+    <td>
+      <pre>
+      - name: readinessProbe
+        value:
+          exec:
+            command:
+            - cat
+            - /tmp/healthy
+          initialDelaySeconds: 5
+          periodSeconds: 5
+      </pre>
+    </td>
+  </tr>
 </table>
 
 > **Note** When using the Tanzu CLI to configure this `serviceAccount` parameter, use `--param serviceAccount=...`.
